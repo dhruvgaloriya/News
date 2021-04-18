@@ -17,6 +17,7 @@ function HomePage() {
       .get("https://newsapi.org/v2/top-headlines", {
         headers: {
           "X-Api-Key": "0ec2115b7e844a1f9c67e638e01f6460",
+          "Access-Control-Allow-Origin": "*",
         },
         params: {
           country: changeCountry,
