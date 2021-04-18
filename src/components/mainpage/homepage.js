@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {
-  Dropdown,
-  Card,
-  Image,
-  Icon,
-  Dimmer,
-  Segment,
-} from "semantic-ui-react";
+import { Dropdown, Card, Image, Icon } from "semantic-ui-react";
 import axios from "axios";
 import { format } from "date-fns";
 import "./homepage.css";
@@ -135,7 +128,7 @@ function HomePage() {
                 />
                 <Card.Content>
                   <Card.Header textAlign="left">
-                    <a onClick={() => bookmark(index)}>{item.title}</a>
+                    <span onClick={() => bookmark(index)}>{item.title}</span>
                   </Card.Header>
                   <Card.Meta textAlign="left">
                     {format(new Date(item.publishedAt), "dd-MMM-yy")}

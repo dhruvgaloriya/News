@@ -1,5 +1,5 @@
 import { React } from "react";
-import { Container, Image, Menu, Icon } from "semantic-ui-react";
+import { Menu, Icon } from "semantic-ui-react";
 import { Link, useLocation } from "react-router-dom";
 //import "./ header.css";
 
@@ -12,13 +12,13 @@ function TopMenu() {
   return (
     <div>
       <Menu size="massive">
-        <Menu.Item as="a" header as={Link} to={"/"}>
+        <Menu.Item header as={Link} to={"/"}>
           <Icon name="newspaper" />
           News App
         </Menu.Item>
 
         <Menu.Menu position="right">
-          <Menu.Item as="a" as={Link} to={"/"} active={splitLocation[1] === ""}>
+          <Menu.Item as={Link} to={"/"} active={splitLocation[1] === ""}>
             <Icon name="fire" />
             Headlines
           </Menu.Item>
