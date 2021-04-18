@@ -1,0 +1,12 @@
+.filters {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+  justify-content: center;
+}
+
+.inside-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+}
